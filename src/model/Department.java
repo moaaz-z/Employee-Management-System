@@ -4,23 +4,27 @@ import java.io.Serializable;
 
 public class Department implements Serializable {
     private final int departmentId;
-    private final DepartmentType departmentType;
+    private String departmentName;
 
-    public Department(int departmentId, DepartmentType departmentType) {
+    public Department(int departmentId, String departmentName) {
         this.departmentId = departmentId;
-        this.departmentType = departmentType;
+        this.departmentName = departmentName;
     }
 
     public int getDepartmentId() {
         return departmentId;
     }
 
-    public DepartmentType getDepartmentType() {
-        return departmentType;
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
     }
 
     @Override
     public String toString() {
-        return departmentType + " (ID: " + departmentId + ")";
+        return departmentName + " (ID: " + departmentId + ")";
     }
 }
