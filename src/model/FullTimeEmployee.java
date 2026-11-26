@@ -5,10 +5,10 @@ public class FullTimeEmployee extends Employee{
  private double bonus;
 
     public FullTimeEmployee(int emp_ID, String fullname, int age, String position, Department department, double basicSalary, double bonus) {
-        super(emp_ID, fullname, age, position, department);
         if(basicSalary <=0 || bonus < 0){
             throw new IllegalArgumentException("Invalid Operation , Please Enter Valid ( Salary / Bonus )");
         }
+        super(emp_ID, fullname, age, position, department);
         this.basicSalary = basicSalary;
         this.bonus = bonus;
     }

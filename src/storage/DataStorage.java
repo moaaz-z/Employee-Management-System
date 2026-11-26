@@ -1,5 +1,5 @@
 package storage;
 
-public class DataStorage {
+public interface DataStorage {
     
 }

@@ -1,13 +1,15 @@
 package service;
 
 import model.Department;
+import storage.DataStorage;
 
+import javax.xml.crypto.Data;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DepartmentManager {
+public class DepartmentManager implements DataStorage {
     private final Map<Integer, Department> departments = new HashMap<>();
 
     public DepartmentManager() {

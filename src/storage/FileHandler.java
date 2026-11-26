@@ -1,5 +1,5 @@
 package storage;
 
-public class FileHandler {
+public class FileHandler implements DataStorage {
     
 }

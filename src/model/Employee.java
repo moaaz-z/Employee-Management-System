@@ -11,6 +11,10 @@ public abstract class Employee implements Serializable {
 
 
     public Employee(int emp_ID, String fullname, int age, String position, Department department) {
+        if(emp_ID < 0 || fullname.isEmpty() || age < 18 || position.isEmpty() || department==null){
+            throw new IllegalArgumentException("Please Enter Valid Arguments");
+        }
+
         this.emp_ID = emp_ID;
         this.fullname = fullname;
         this.age = age;
