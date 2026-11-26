@@ -1,16 +1,16 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="LJzN2VXb3mycRUoWuCkP">
-    <mxGraphModel dx="3149" dy="1985" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="2278" dy="1503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="hkwu_3uaQgA3B1NQUYs9-26" edge="1" parent="1" source="hkwu_3uaQgA3B1NQUYs9-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;" target="hkwu_3uaQgA3B1NQUYs9-23">
+        <mxCell id="hkwu_3uaQgA3B1NQUYs9-26" edge="1" parent="1" source="hkwu_3uaQgA3B1NQUYs9-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=open;endFill=0;" target="hkwu_3uaQgA3B1NQUYs9-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9qQqAUZx47hdH7AWglPy-2" edge="1" parent="1" source="hkwu_3uaQgA3B1NQUYs9-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;dashed=1;" target="9qQqAUZx47hdH7AWglPy-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hkwu_3uaQgA3B1NQUYs9-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;&lt;i&gt;Employee&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- id : int&lt;br&gt;- fullName : String&lt;br&gt;- age : int&lt;br&gt;- department : String&lt;br&gt;- position : String&lt;/code&gt;&lt;/pre&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+&lt;font style=&quot;font-size: 8px;&quot;&gt; Employee(id, fullName, age, department, position)&lt;br&gt;+ getId() : int&lt;br&gt;+ getFullName() : String&lt;br&gt;+ getAge() : int&lt;br&gt;+ getDepartment() : String&lt;br&gt;+ getPosition() : String&lt;br&gt;+ setFullName(fullName : String) : void&lt;br&gt;+ setAge(age : int) : void&lt;br&gt;+ setDepartment(department : String) : void&lt;br&gt;+ setPosition(position : String) : void&lt;br&gt;&lt;i&gt;+ calculateSalary() : double   &lt;/i&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: Helvetica; white-space: normal;&quot;&gt;abstract&lt;/i&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;i&gt;+ getType() : String  &lt;/i&gt;         &lt;i style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: Helvetica; white-space: normal;&quot;&gt;abstract&lt;/i&gt;&lt;br&gt;+ toString() : String&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+        <mxCell id="hkwu_3uaQgA3B1NQUYs9-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;&lt;i&gt;Employee&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- id : int&lt;br&gt;- fullName : String&lt;br&gt;- age : int&lt;br&gt;- department : Department &lt;br&gt;- position : String&lt;/code&gt;&lt;/pre&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+&lt;font style=&quot;font-size: 8px;&quot;&gt; Employee(id, fullName, age, department, position)&lt;br&gt;+ getId() : int&lt;br&gt;+ getFullName() : String&lt;br&gt;+ getAge() : int&lt;br&gt;+ getDepartment() : String&lt;br&gt;+ getPosition() : String&lt;br&gt;+ setFullName(fullName : String) : void&lt;br&gt;+ setAge(age : int) : void&lt;br&gt;+ setDepartment(department : String) : void&lt;br&gt;+ setPosition(position : String) : void&lt;br&gt;&lt;i&gt;+ calculateSalary() : double   &lt;/i&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: Helvetica; white-space: normal;&quot;&gt;abstract&lt;/i&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;i&gt;+ getType() : String  &lt;/i&gt;         &lt;i style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: Helvetica; white-space: normal;&quot;&gt;abstract&lt;/i&gt;&lt;br&gt;+ toString() : String&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
           <mxGeometry height="340" width="290" x="390" y="20" as="geometry" />
         </mxCell>
         <mxCell id="hkwu_3uaQgA3B1NQUYs9-17" edge="1" parent="1" source="hkwu_3uaQgA3B1NQUYs9-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;endSize=12;" target="hkwu_3uaQgA3B1NQUYs9-14">
@@ -67,7 +67,7 @@
         <mxCell id="9qQqAUZx47hdH7AWglPy-16" edge="1" parent="1" source="9qQqAUZx47hdH7AWglPy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=open;endFill=0;" target="hkwu_3uaQgA3B1NQUYs9-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9qQqAUZx47hdH7AWglPy-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;DepartmentManager&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- departments : ArrayList&amp;lt;Department&amp;gt;&lt;br/&gt;- storage : DataStorage&lt;/code&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ DepartmentManager(storage : DataStorage)&lt;br/&gt;+ addDepartment(d : Department) : void&lt;br/&gt;+ deleteDepartment(id : int) : boolean&lt;br/&gt;+ isNameDuplicate(name : String) : boolean&lt;br/&gt;+ getAllDepartments() : ArrayList&amp;lt;Department&amp;gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+        <mxCell id="9qQqAUZx47hdH7AWglPy-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;DepartmentManager&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- departments : Map&amp;lt;ID,Department&amp;gt;&lt;br&gt;- storage : DataStorage&lt;/code&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ DepartmentManager(storage : DataStorage)&lt;br&gt;+ addDepartment(d : Department) : void&lt;br&gt;+ deleteDepartment(id : int) : boolean&lt;br&gt;+ isNameDuplicate(name : String) : boolean&lt;br&gt;+ getAllDepartments() : ArrayList&amp;lt;Department&amp;gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
           <mxGeometry height="135" width="295" x="1090" y="125" as="geometry" />
         </mxCell>
         <mxCell id="9qQqAUZx47hdH7AWglPy-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="*" vertex="1">
@@ -84,6 +84,178 @@
         </mxCell>
         <mxCell id="9qQqAUZx47hdH7AWglPy-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
           <mxGeometry height="30" width="60" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-29" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;LoginForm&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- USERNAME : String = &quot;admin&quot;&lt;br/&gt;- PASSWORD : String = &quot;admin123&quot;&lt;/code&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ LoginForm()&lt;br/&gt;+ handleLogin() : void&lt;br/&gt;- buildUI() : void&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="110" width="230" x="440" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;startArrow=diamond;startFill=1;" target="9qQqAUZx47hdH7AWglPy-6">
+          <mxGeometry relative="1" x="0.0507" as="geometry">
+            <Array as="points">
+              <mxPoint x="-400" y="1220" />
+              <mxPoint x="-400" y="175" />
+            </Array>
+            <mxPoint x="390" y="1220" as="sourcePoint" />
+            <mxPoint x="-340" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-8" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;startArrow=diamond;startFill=1;" target="9qQqAUZx47hdH7AWglPy-7">
+          <mxGeometry relative="1" x="0.0002" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="1240" />
+              <mxPoint x="1540" y="192.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-28" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;MainDashboard&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- employeeManager : EmployeeManager&lt;br&gt;- departmentManager : DepartmentManager&lt;br&gt;- cardLayout : CardLayout&lt;br&gt;- cardPanel : JPanel&lt;/code&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;+ MainDashboard(storage : DataStorage)&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;- buildUI() : void&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;- makeNavButton(label : String, card : String) : JButton&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;- buildHomePanel() : JPanel&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;- logout() : void&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;+ showPanel(name : String) : void&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;+ getEmployeeManager() : EmployeeManager&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;, monospace; font-size: 10px; white-space: normal;&quot;&gt;+ getDepartmentManager() : DepartmentManager&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="200" width="320" x="395" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-10" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;AddEmployeePanel&lt;/font&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;- dashboard : MainDashboard&lt;br&gt;- idField, nameField, ageField, positionField : JTextField&lt;br&gt;- typeCombo : JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- deptCombo : JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- basicSalaryField, bonusField : JTextField&lt;br&gt;- hourlyRateField, hoursWorkedField : JTextField&lt;br&gt;- fullTimePanel, partTimePanel : JPanel&lt;/font&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ AddEmployeePanel(dashboard : MainDashboard)&lt;br&gt;- buildUI() : void&lt;br&gt;- addRow(panel, gbc, row : int, label : String, field : JComponent) : void&lt;br&gt;- toggleSalaryFields() : void&lt;br&gt;- validateInput() : boolean              &lt;br&gt;- saveEmployee() : void&lt;br&gt;- clearFields() : void&lt;br&gt;+ refresh() : void                       &lt;br&gt;- styleButton(btn : JButton, color : Color) : void&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="230" width="370" x="-380" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-49" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-11" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;ViewEmployeePanel&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- dashboard : MainDashboard&lt;br&gt;- table : JTable&lt;br&gt;- tableModel : DefaultTableModel&lt;br&gt;- COLUMNS : String[]&lt;/code&gt;&lt;/pre&gt;&lt;div&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ ViewEmployeePanel(dashboard : MainDashboard)&lt;br&gt;- buildUI() : void&lt;br&gt;+ refreshTable() : void&lt;br&gt;+ getSelectedEmployee() : Employee&lt;br&gt;+ refresh() : void   // NEW: calls refreshTable()&lt;br&gt;- styleButton(btn : JButton, color : Color) : void&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="255" x="5" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-36" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=diamond;endFill=1;" target="wEDwb0LFqnI2eTlkv4a8-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="467.5" y="1430" />
+              <mxPoint x="555" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-12" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;SearchPanel&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- dashboard : MainDashboard&lt;br&gt;- idField : JTextField&lt;br&gt;- deptCombo : JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- table : JTable&lt;br&gt;- tableModel : DefaultTableModel&lt;br&gt;- COLUMNS : String[]&lt;/code&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ SearchPanel(dashboard : MainDashboard)&lt;br/&gt;- buildUI() : void&lt;br/&gt;- buildDeptArray() : String[]&lt;br/&gt;- searchById() : void&lt;br/&gt;- filterByDept() : void&lt;br/&gt;- showAll() : void&lt;br/&gt;- deleteSelected() : void&lt;br/&gt;- addRow(e : Employee) : void&lt;br/&gt;+ refresh() : void                       // NEW: reload deptCombo and table&lt;br/&gt;- styleButton(btn : JButton, color : Color) : void&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="230" width="385" x="275" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-37" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.672;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=1;" target="wEDwb0LFqnI2eTlkv4a8-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-13" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;UpdateEmployeePanel&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;- dashboard : MainDashboard&lt;br&gt;- table : JTable&lt;br&gt;- tableModel : DefaultTableModel&lt;br&gt;- nameField, ageField, positionField : JTextField&lt;br&gt;- deptCombo, typeCombo : JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- basicSalaryField, bonusField, hourlyRateField, hoursWorkedField : JTextField&lt;br&gt;- fullTimePanel, partTimePanel : JPanel&lt;br&gt;- selectedId : int                       // -1 means nothing selected&lt;br&gt;- COLUMNS : String[]&lt;/code&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ UpdateEmployeePanel(dashboard : MainDashboard)&lt;br&gt;- buildUI() : void&lt;br&gt;+ refreshTable() : void&lt;br&gt;- loadSelectedEmployee() : void&lt;br&gt;- toggleSalaryFields() : void&lt;br&gt;- validateInput() : boolean              // NEW&lt;br&gt;- saveChanges() : void&lt;br&gt;- clearForm() : void&lt;br&gt;+ refresh() : void                       // NEW: reload table and deptCombo&lt;br&gt;&lt;pre&gt;&lt;code&gt;- addRow(panel : JPanel, gbc : GridBagConstraints, row : int, label : String, field : JComponent) : void&lt;br/&gt;- styleButton(btn : JButton, color : Color) : void&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="285" width="520" x="690" y="1495" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=9;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;DepartmentPanel&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt; &lt;/code&gt;- dashboard : MainDashboard&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;- idField, nameField : JTextField&lt;br&gt;- table : JTable&lt;br&gt;- tableModel : DefaultTableModel&lt;br&gt;- COLUMNS : String[]&lt;/code&gt;&lt;/pre&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;pre&gt;&lt;code&gt;+ DepartmentPanel(dashboard : MainDashboard)&lt;br/&gt;- buildUI() : void&lt;br/&gt;- addDepartment() : void&lt;br/&gt;- deleteDepartment() : void&lt;br/&gt;+ refreshTable() : void&lt;br/&gt;- clearFields() : void                   // NEW&lt;br/&gt;+ refresh() : void                       // NEW: calls refreshTable()&lt;br/&gt;- styleButton(btn : JButton, color : Color) : void&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="210" width="370" x="1240" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-19" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;endArrow=open;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-18" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#2C3E50;strokeWidth=1.5;" value="&lt;div style=&quot;background:#EBEDEF; text-align:center; padding:6px 8px 5px 8px; font-family:Helvetica,Arial,sans-serif;&quot;&gt;&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Main&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;margin:0; border:none; border-top:1px solid #333;&quot;/&gt;&lt;div style=&quot;padding:5px 8px; font-family:&#39;Courier New&#39;,monospace; font-size:10px; line-height:1.4;&quot;&gt; &lt;/div&gt;&lt;hr style=&quot;margin:0; border:none; border-top:1px solid #333;&quot;/&gt;&lt;div style=&quot;padding:5px 8px; font-family:&#39;Courier New&#39;,monospace; font-size:10px; line-height:1.4;&quot;&gt;+ &lt;u&gt;main(args : String[]) : void&lt;/u&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="245" x="40" y="882.5" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Creates" vertex="1">
+          <mxGeometry width="30" x="340" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-24" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.702;exitY=-0.009;exitDx=0;exitDy=0;entryX=0.783;entryY=1;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;labelBackgroundColor=#ffffff;fontSize=10;exitPerimeter=0;entryPerimeter=0;" target="wEDwb0LFqnI2eTlkv4a8-1" value="&amp;lt;&amp;lt;reopens on logout&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="715" y="1050" as="sourcePoint" />
+            <mxPoint x="485" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-25" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.32;entryY=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;labelBackgroundColor=#ffffff;fontSize=10;entryPerimeter=0;" target="wEDwb0LFqnI2eTlkv4a8-2" value="&amp;lt;&amp;lt;creates&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1050" as="sourcePoint" />
+            <mxPoint x="730" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-26" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.7;exitY=0;exitDx=0;exitDy=0;entryX=0.994;entryY=0.569;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;labelBackgroundColor=#ffffff;fontSize=10;entryPerimeter=0;" target="hkwu_3uaQgA3B1NQUYs9-30" value="&amp;lt;&amp;lt;creates&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.4881" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="820" />
+              <mxPoint x="170" y="820" />
+              <mxPoint x="170" y="753.3" />
+            </Array>
+            <mxPoint x="550" y="870" as="sourcePoint" />
+            <mxPoint x="1345" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-27" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#F8F9F9;strokeColor=#566573;strokeWidth=1.5;dashed=1;" value="&lt;div style=&quot;background:#EAEDED; text-align:center; padding:6px 8px 5px 8px; font-family:Helvetica,Arial,sans-serif;&quot;&gt;&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;JFrame&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:9px; color:#555;&quot;&gt;javax.swing&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="150" x="960" y="925" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-34" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.126;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=diamond;endFill=1;" target="wEDwb0LFqnI2eTlkv4a8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-35" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.278;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=diamond;endFill=1;" target="wEDwb0LFqnI2eTlkv4a8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-38" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.922;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=diamond;endFill=1;" target="wEDwb0LFqnI2eTlkv4a8-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1425" y="1410" />
+              <mxPoint x="690" y="1410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-39" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;labelBackgroundColor=#ffffff;fontSize=10;exitX=0;exitY=0.304;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hkwu_3uaQgA3B1NQUYs9-16" value="&amp;lt;&amp;lt;creates&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.2719" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-600" y="1539.9" />
+              <mxPoint x="-600" y="477.5" />
+            </Array>
+            <mxPoint x="-660" y="1010" as="sourcePoint" />
+            <mxPoint x="-570" y="723.1325301204819" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-41" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;labelBackgroundColor=#ffffff;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="hkwu_3uaQgA3B1NQUYs9-18" value="&amp;lt;&amp;lt;creates&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.4943" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-670" y="1590" />
+              <mxPoint x="-670" y="420" />
+              <mxPoint x="235" y="420" />
+              <mxPoint x="235" y="590" />
+              <mxPoint x="705" y="590" />
+            </Array>
+            <mxPoint x="-405" y="1652" as="sourcePoint" />
+            <mxPoint x="235" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-42" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.365;exitY=0.018;exitDx=0;exitDy=0;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;labelBackgroundColor=#ffffff;fontSize=10;exitPerimeter=0;entryX=1.005;entryY=0.571;entryDx=0;entryDy=0;entryPerimeter=0;" target="hkwu_3uaQgA3B1NQUYs9-18" value="&amp;lt;&amp;lt;creates&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.1954" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="921" y="1310" as="sourcePoint" />
+            <mxPoint x="860" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-45" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.449;exitY=-0.001;exitDx=0;exitDy=0;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;labelBackgroundColor=#ffffff;fontSize=10;exitPerimeter=0;entryX=0.845;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;" target="hkwu_3uaQgA3B1NQUYs9-16" value="&amp;lt;&amp;lt;creates&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.3631" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="930" y="1494.7" />
+              <mxPoint x="930" y="650" />
+              <mxPoint x="420.6" y="650" />
+            </Array>
+            <mxPoint x="1000" y="1432.5" as="sourcePoint" />
+            <mxPoint x="921" y="417.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-46" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=#F8F9F9;strokeColor=#566573;strokeWidth=1.5;dashed=1;" value="&lt;div style=&quot;background:#EAEDED; text-align:center; padding:6px 8px 5px 8px; font-family:Helvetica,Arial,sans-serif;&quot;&gt;&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;JPanel&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:9px; color:#555;&quot;&gt;javax.swing&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="350" x="320" y="2050" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-48" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.086;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-50" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.451;entryY=-0.034;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-51" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.685;entryY=-0.034;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-52" edge="1" parent="1" source="wEDwb0LFqnI2eTlkv4a8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.885;entryY=0.026;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="wEDwb0LFqnI2eTlkv4a8-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wEDwb0LFqnI2eTlkv4a8-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="//&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;JFrame and JPanel are built-in Java Swing classes (javax.swing).&lt;/span&gt;&lt;pre&gt;&lt;code&gt;JFrame is the application window: LoginForm and MainDashboard extend it.&lt;br/&gt;JPanel is a container placed inside a window: the five screen panels extend it.&lt;br/&gt;MainDashboard owns the panels through a CardLayout, so only one panel is visible at a time.&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="245" x="1115" y="830" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
