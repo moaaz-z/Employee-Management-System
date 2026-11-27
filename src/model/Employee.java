@@ -4,19 +4,17 @@ import java.io.Serializable;
 
 public abstract class Employee implements Serializable {
     private final int emp_ID;           // Cannot be altered
-    private final String fullname;      // Cannot be altered
+    private final String fullName;      // Cannot be altered
     private int age;
     private Department department;
     private String position;
 
 
-    public Employee(int emp_ID, String fullname, int age, String position, Department department) {
-        if(emp_ID < 0 || fullname.isEmpty() || age < 18 || position.isEmpty() || department==null){
-            throw new IllegalArgumentException("Please Enter Valid Arguments");
-        }
+    public Employee(int emp_ID, String fullName, int age, String position, Department department) {
+
 
         this.emp_ID = emp_ID;
-        this.fullname = fullname;
+        this.fullName = fullName;
         this.age = age;
         this.position = position;
         this.department = department;
@@ -27,7 +25,7 @@ public abstract class Employee implements Serializable {
     }
 
     public String getFullname() {
-        return fullname;
+        return fullName;
     }
 
     public int getAge() {
@@ -62,7 +60,7 @@ public abstract class Employee implements Serializable {
     @Override
     public String toString() {
         return "Employee ID: " + emp_ID +
-                ", Name: " + fullname +
+                ", Name: " + fullName +
                 ", Age: " + age +
                 ", Position: " + position +
                 ", Department: " + department +

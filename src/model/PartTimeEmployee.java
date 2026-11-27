@@ -31,7 +31,7 @@ public class PartTimeEmployee extends Employee{
 
     @Override
     public String getType(){
-        return "Part-Time Employee";    // bad coding
+        return "Part-Time";    // bad coding
     }
 
     @Override

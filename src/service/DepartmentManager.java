@@ -9,23 +9,23 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DepartmentManager implements DataStorage {
-    private final Map<Integer, Department> departments = new HashMap<>();
+public class DepartmentManager {
+    private  Map<Integer, Department> departments = new HashMap<>();
+    private  DataStorage storage;
 
-    public DepartmentManager() {
-        addDepartment(1, "IT");
-        addDepartment(2, "Human Resources");
-        addDepartment(3, "Finance");
-        addDepartment(4, "Marketing");
-        addDepartment(5, "Sales");
+    public DepartmentManager(DataStorage storage) {
+        this.departments=storage.loadDepartments();
+        this.storage=storage;
     }
 
-    public boolean addDepartment(int id, String name) {
+    public void addDepartment(int id, String name) {
         if (name == null || name.trim().isEmpty() || isDuplicate((id))) {
-            return false;
+            throw new IllegalArgumentException("Enter Valid Parameters( ID , Name )");
         }
         departments.put(id, new Department(id, name.trim()));
-        return true;
+        storage.saveDepartments(departments);
+
+
     }
 
     public Department getDepartment(int id) {
@@ -33,7 +33,9 @@ public class DepartmentManager implements DataStorage {
     }
 
     public boolean deleteDepartment(int id) {
-        return departments.remove(id) != null;
+         departments.remove(id) ;
+        storage.saveDepartments(departments);
+        return !departments.containsKey(id);
     }
 
     public boolean isDuplicate(int id) {

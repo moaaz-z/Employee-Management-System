@@ -21,7 +21,7 @@ public class FullTimeEmployee extends Employee{
     @Override
     public String getType(){
 
-        return "FullTime Employee";             // I think this is bad coding
+        return "FullTime";             // I think this is bad coding
 
     }
 
