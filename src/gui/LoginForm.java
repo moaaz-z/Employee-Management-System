@@ -50,6 +50,19 @@ public class LoginForm extends JFrame {
         gbc.gridx = 1;
         passwordField = new JPasswordField(15);
         formPanel.add(passwordField, gbc);
+        gbc.gridx = 1; gbc.gridy = 2;
+        gbc.insets = new Insets(2, 6, 6, 6);
+        JCheckBox showPasswordCheck = new JCheckBox("Show password");
+        showPasswordCheck.setFont(new Font("SansSerif", Font.PLAIN, 12));
+        showPasswordCheck.setForeground(new Color(44, 62, 80));
+        showPasswordCheck.setOpaque(false);
+        showPasswordCheck.setFocusPainted(false);
+        final char defaultEcho = passwordField.getEchoChar();
+        showPasswordCheck.addActionListener(e ->
+                passwordField.setEchoChar(showPasswordCheck.isSelected() ? (char) 0 : defaultEcho)
+        );
+        formPanel.add(showPasswordCheck, gbc);
+
 
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         JButton loginBtn = new JButton("Login");

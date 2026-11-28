@@ -64,8 +64,12 @@ public class DepartmentManager {
 }
 
 public Department getDepartmentByName(String name) {
+    if (name == null) {
+        return null;
+    }
+    String trimmed = name.trim();
     for (Department d : departments.values()) {
-        if (d.getDepartmentName().equals(name)) {
+        if (d.getDepartmentName().equalsIgnoreCase(trimmed)) {
             return d;
         }
     }
