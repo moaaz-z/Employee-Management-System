@@ -1,8 +1,9 @@
 # Employee Management System (EMS)
-##members Id
-**hamza ayman-9872
-**salwa mohamed -9892
-**moaaz mohamed -10469
+## Team Members
+
+- **Hamza Ayman** — ID: `9872`
+- **Salwa Mohamed** — ID: `9892`
+- **Moaaz Mohamed** — ID: `10469`
 ## Description
 
 EMS is a desktop application built with Java Swing and Object-Oriented Programming. It helps a company manage its employees and departments. An administrator can log in, add, view, update, delete, search, and filter employee records, manage departments, and see each employee's calculated salary. All data is saved to files and reloaded when the application starts.
