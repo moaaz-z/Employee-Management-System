@@ -43,7 +43,7 @@ public class EmployeeManager {
         }
 
 
-    public Employee addPartTimeEmployee(String fullName, int age, String position, Department department, double hourlyRate, int hoursWorked) {
+    public Employee addPartTimeEmployee(String fullName, int age, String position, Department department, double hourlyRate, double  hoursWorked) {
         if (fullName.isEmpty() || age < 18 || position.isEmpty() || department == null || hourlyRate <= 0 || hoursWorked < 0) {
             throw new IllegalArgumentException("Please Enter Valid Arguments");
         }
@@ -53,5 +53,47 @@ public class EmployeeManager {
         storage.saveEmployees(employees);
         return emp;
     }
+public Employee searchById(int id) {
+    for (Employee e : employees) {
+        if (e.getEmp_ID() == id) {
+            return e;
+        }
+    }
+    return null;
+}
 
+public void updateEmployee(int id, Employee updated) {
+    for (int i = 0; i < employees.size(); i++) {
+        if (employees.get(i).getEmp_ID() == id) {
+            employees.set(i, updated);
+            storage.saveEmployees(employees);
+            return;
+        }
+    }
+    throw new IllegalArgumentException("Employee with ID " + id + " not found.");
+}
+
+    public boolean deleteEmployee(int id) {
+        for (int i = 0; i < employees.size(); i++) {
+            if (employees.get(i).getEmp_ID() == id) {
+                employees.remove(i);
+                storage.saveEmployees(employees);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public ArrayList<Employee> getAllEmployees() {
+        return new ArrayList<>(employees);
+    }
+    public ArrayList<Employee> filterByDepartment(String departmentName) {
+    ArrayList<Employee> result = new ArrayList<>();
+    for (Employee e : employees) {
+        if (e.getDepartment().getDepartmentName().equalsIgnoreCase(departmentName)) {
+            result.add(e);
+        }
+    }
+    return result;
+}
 }
